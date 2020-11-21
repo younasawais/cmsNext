@@ -1,65 +1,35 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+//import Link from 'next/link';
+import React, {Fragment} from 'react';
+import styles from '../components/home.module.css';
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Menu from '../components/nav';
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+export default function Home(){
+    return (
+        <Fragment>
+        <section className="header5 cid-s9NcstqoeV mbr-fullscreen" id="header5-h" style={{background: 'linear-gradient(0deg, #f3e4cb, #00000091, #59e0ca)'}}>
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="mbr-white col-md-10">
+                        <h1 className="mbr-section-title align-center pb-3 mbr-fonts-style display-1">
+                            Qouh
+                        </h1>
+                        <p className="mbr-text align-center display-5 pb-3 mbr-fonts-style">
+                        “Wisdom is not a product of schooling but of the lifelong attempt to acquire it.” ― Albert Einstein
+                        </p>
+                        <div className="mbr-section-btn align-center">
+                            {/* {menus.map((menu, i)=>{return(
+                                <Link key={i} type="button" to={'/article/'+menuLinks[i].linkId} className="btn btn-md btn-white-outline display-4">{menu.name}</Link>
+                            )})} */}
+                            <Button type="button" href='/article' variant="outline-secondary" >Testing</Button>
+                            <Button type="button" href='/article' variant="outline-secondary" >Testing</Button>
+                            <Button type="button" href='/article' variant="outline-secondary" >Testing</Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </Fragment>
+    );
 }
