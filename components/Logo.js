@@ -3,15 +3,15 @@ import {Fragment} from 'react';
 export function Logo(){
     return(
         <Fragment>
-                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                {/* <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <div className="hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                </button>
-                <div className="menu-logo">
+                </button> */}
+                <div className="menu-logo" style={{display: 'flex', justifyContent: 'space-around'}}>
                     <div className="navbar-brand">
                         {/* <span className="navbar-logo">
                             <a href="https://qouh.com">
@@ -21,8 +21,6 @@ export function Logo(){
                         <a href="/">
                             <h2 style={{fontFamily: "Squada One", color: '#939393'}}>QOUH.com</h2>
                         </a>
-                        
-                        
                     </div>
                 </div>
         </Fragment>

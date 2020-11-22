@@ -22,6 +22,12 @@ div, p, .btn, button, h1, h2, h3, h4, h5, h6, table, hr, a, select, li, ul, dl, 
   animation-duration: 0.5s;
 }
 
+/* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+} */
+
 @keyframes example {
   from {opacity: 0;}
   to {opacity: 1;}
