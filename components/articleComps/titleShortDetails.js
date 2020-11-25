@@ -1,5 +1,5 @@
 
-export function TitleShortDetails(){
+export function TitleShortDetails({title, title2}){
     return(
         <section>
         <meta charSet="utf-8" />
@@ -8,15 +8,15 @@ export function TitleShortDetails(){
             <div className="media-container-row">
                 <div className="title col-12 col-md-12">
                     <h2 style={{fontFamily: 'Rubik, sans-serif', fontSize: '3rem', textAlign: 'center'}} >
-                        <strong style={{fontWeight: 'bold'}}>The Difficulties Of The Story</strong></h2>
+                        <strong style={{fontWeight: 'bold'}}>{title}</strong>
+                    </h2>
                     <h3 className="align-center" 
                     style={{
                         fontFamily: 'Rubik, sans-serif',
                         fontSize: '1.5rem',
                         color: '#767676',
                         fontWeight: 300
-                    }}
-                    >I propose to deal in this chapter with the difficulties or dangers which beset the path of the story-teller, </h3>
+                    }}>{title2}</h3>
                 </div>
             </div>
         </div>
