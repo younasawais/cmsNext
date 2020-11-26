@@ -2,7 +2,6 @@ import {Menu} from '../../components';
 import { Footer, TitleShortDetails, ArticlePicture, ArticleText1, ReferenceAndTags} from '../../components/articleComps';
 import React from 'react';
 import axios from 'axios';
-import { useRouter } from 'next/router';
 
 // const comment = () => {
 //     const router = useRouter()
@@ -13,19 +12,22 @@ import { useRouter } from 'next/router';
 Article.getInitialProps = async ({query}) => {
     //const router = useRouter()
     const { id } = query
-    console.log(id);
+    //console.log(id);
     const {data} = await axios.post('https://nuqf.com/getarticleinfowithmenuitems', {'linkId' : id});
     
     return( { 
-        data : data
+        articleInfo : data.articleInfo,
+        articleMenuItems : data.articleMenuItems
     })
 }
 
-export default function Article({data}){
-    const {title, title2, imageName1, text1, text2, tags, reference} = data.articleInfo;
+export default function Article({articleInfo, articleMenuItems}){
+    const {title, title2, imageName1, text1, text2, tags, reference} = articleInfo;
     return(
         <React.Fragment>
-            <Menu />
+            <Menu 
+                articleMenuItems= {articleMenuItems}
+            />
             <TitleShortDetails 
                 title  ={title}
                 title2 ={title2}

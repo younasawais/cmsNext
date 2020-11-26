@@ -7,7 +7,7 @@ export function TitleShortDetails({title, title2}){
         <div className="container">
             <div className="media-container-row">
                 <div className="title col-12 col-md-12">
-                    <h2 style={{fontFamily: 'Rubik, sans-serif', fontSize: '3rem', textAlign: 'center'}} >
+                    <h2 style={{fontFamily:'Barlow', fontSize: '3rem', textAlign: 'center'}} >
                         <strong style={{fontWeight: 'bold'}}>{title}</strong>
                     </h2>
                     <h3 className="align-center" 
