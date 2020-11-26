@@ -1,10 +1,10 @@
-import { Nav, NavDropdown, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Logo} from './';
+import Logo from './Logo.js';
 import styling from '../styles/Nav.module.css';
 import { Fragment } from 'react';
 
-export function Menu({articleMenuItems}) {
+export default function Menu({articleMenuItems}) {
   return (
     <Fragment>
         <Logo />

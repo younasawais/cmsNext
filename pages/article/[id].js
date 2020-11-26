@@ -1,4 +1,4 @@
-import {Menu} from '../../components';
+import Menu from '../../components/Menu.js';
 import { Footer, TitleShortDetails, ArticlePicture, ArticleText1, ReferenceAndTags} from '../../components/articleComps';
 import React from 'react';
 import axios from 'axios';
