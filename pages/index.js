@@ -3,6 +3,7 @@ import React, {Fragment} from 'react';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import Head from 'next/head';
 
 // API load time: https://nuqf.com/getmenunamesandlinks
 Home.getInitialProps = async () => {
@@ -13,6 +14,9 @@ Home.getInitialProps = async () => {
 export default function Home({menuLinks, menus}){
     return (
         <Fragment>
+        <Head>
+            <title>Your journey to wisdom..</title>
+        </Head>
         <section style={style.section}>
                 <div style={style.container}>
                     <h1 style={style.h1}>

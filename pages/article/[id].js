@@ -2,6 +2,7 @@ import Menu from '../../components/Menu.js';
 import { Footer, TitleShortDetails, ArticlePicture, ArticleText1, ReferenceAndTags} from '../../components/articleComps';
 import React from 'react';
 import axios from 'axios';
+import Head from 'next/head';
 
 // const comment = () => {
 //     const router = useRouter()
@@ -25,6 +26,9 @@ export default function Article({articleInfo, articleMenuItems}){
     const {title, title2, imageName1, text1, text2, tags, reference} = articleInfo;
     return(
         <React.Fragment>
+            <Head>
+                <title>{title}</title>
+            </Head>
             <Menu 
                 articleMenuItems= {articleMenuItems}
             />
