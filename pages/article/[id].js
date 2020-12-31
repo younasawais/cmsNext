@@ -24,7 +24,6 @@ Article.getInitialProps = async ({query}) => {
 
 export default function Article({articleInfo, articleMenuItems}){
     const {title, title2, imageName1, text1, text2, tags, reference} = articleInfo;
-    console.log(imageName1);
     return(
         <React.Fragment>
             <Head>
