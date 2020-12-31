@@ -24,6 +24,7 @@ Article.getInitialProps = async ({query}) => {
 
 export default function Article({articleInfo, articleMenuItems}){
     const {title, title2, imageName1, text1, text2, tags, reference} = articleInfo;
+    console.log(imageName1);
     return(
         <React.Fragment>
             <Head>
@@ -36,9 +37,12 @@ export default function Article({articleInfo, articleMenuItems}){
                 title  ={title}
                 title2 ={title2}
             />
-            <ArticlePicture 
-                imageName1={imageName1}
-            />
+            {
+                imageName1 ? 
+                <ArticlePicture 
+                    imageName1={imageName1}
+                /> : ""
+            }
             <ArticleText1 
                 text={text1}
             />
